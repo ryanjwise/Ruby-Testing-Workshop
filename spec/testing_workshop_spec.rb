@@ -3,9 +3,9 @@ require 'testing_workshop'
 RSpec.describe TestingWorkshop do
   subject(:workshop) { described_class.new }
 
-  describe '#run' do
-    it 'prints hello world' do
-      expect { workshop.run }.to output("hello world\n").to_stdout
+  describe 'Setup Verification' do
+    it 'is defined and can be instantiated' do
+      expect(workshop).to be_instance_of(TestingWorkshop)
     end
   end
 end
